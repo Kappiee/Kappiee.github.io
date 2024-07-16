@@ -1,0 +1,241 @@
+<template>
+    <div><h1 id="文件上传" tabindex="-1"><a class="header-anchor" href="#文件上传"><span>文件上传</span></a></h1>
+        <p>流程：</p>
+        <ol>
+            <li>客户端将文件数据发送给服务器</li>
+            <li>服务器保存上传的文件数据到服务器端</li>
+            <li>服务器响应给客户端一个文件访问地址</li>
+        </ol>
+        <blockquote>
+            <p>测试地址：<a href="http://study.yuanjin.tech/api/upload" target="_blank" rel="noopener noreferrer">http://study.yuanjin.tech/api/upload</a>
+                键的名称（表单域名称）：imagefile</p>
+        </blockquote>
+        <p>请求方法：POST
+            请求的表单格式：multipart/form-data
+            请求体中必须包含一个键值对，键的名称是服务器要求的名称，值是文件数据</p>
+        <blockquote>
+            <p>HTML5 中，JS 仍然无法随意的获取文件数据，但是可以获取到 input 元素中，被用户选中的文件数据
+                可以利用 HTML5 提供的 FormData 构造函数来创建请求体</p>
+        </blockquote>
+        <div class="language-html line-numbers-mode" data-highlighter="prismjs" data-ext="html" data-title="html"><pre
+            v-pre class="language-html"><code><span class="line"><span class="token doctype"><span
+            class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span
+            class="token name">html</span><span class="token punctuation">></span></span></span>
+<span class="line"><span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span
+    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+    class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span
+    class="token punctuation">></span></span></span>
+<span class="line">  <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span
+    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+    class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span
+    class="token punctuation">/></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span
+    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+    class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span
+    class="token attr-name">content</span><span class="token attr-value"><span
+    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span
+    class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span
+    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+    class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span
+    class="token attr-name">content</span><span class="token attr-value"><span
+    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ie=edge<span
+    class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span
+    class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span></span>
+<span class="line">  <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span></span>
+<span class="line"></span>
+<span class="line">  <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span
+    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+    class="token punctuation">"</span><span class="token punctuation">"</span></span> <span
+    class="token attr-name">alt</span><span class="token attr-value"><span
+    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span
+    class="token punctuation">"</span></span> <span class="token attr-name">id</span><span
+    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+    class="token punctuation">"</span>imgAvatar<span class="token punctuation">"</span></span> <span
+    class="token punctuation">/></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span
+    class="token attr-name">type</span><span class="token attr-value"><span
+    class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span
+    class="token punctuation">"</span></span> <span class="token attr-name">id</span><span
+    class="token attr-value"><span class="token punctuation attr-equals">=</span><span
+    class="token punctuation">"</span>avatar<span class="token punctuation">"</span></span> <span
+    class="token punctuation">/></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span
+    class="token punctuation">></span></span>上传<span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span>
+<span class="line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span
+    class="token punctuation">></span></span><span class="token script"><span class="token language-javascript"></span>
+<span class="line">      <span class="token keyword">async</span> <span class="token keyword">function</span> <span
+    class="token function">upload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">const</span> inp <span
+    class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span
+    class="token punctuation">(</span><span class="token string">'avatar'</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">if</span> <span class="token punctuation">(</span>inp<span
+    class="token punctuation">.</span>files<span class="token punctuation">.</span>length <span class="token operator">===</span> <span
+    class="token number">0</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">          <span class="token function">alert</span><span class="token punctuation">(</span><span
+    class="token string">'请选择要上传的文件'</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">          <span class="token keyword">return</span><span class="token punctuation">;</span></span>
+<span class="line">        <span class="token punctuation">}</span></span>
+<span class="line">        <span class="token keyword">const</span> formData <span class="token operator">=</span> <span
+    class="token keyword">new</span> <span class="token class-name">FormData</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span> <span class="token comment">//构建请求体</span></span>
+<span class="line">        formData<span class="token punctuation">.</span><span
+    class="token function">append</span><span class="token punctuation">(</span><span
+    class="token string">'imagefile'</span><span class="token punctuation">,</span> inp<span
+    class="token punctuation">.</span>files<span class="token punctuation">[</span><span
+    class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">const</span> url <span class="token operator">=</span> <span
+    class="token string">'http://study.yuanjin.tech/api/upload'</span><span class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">const</span> resp <span class="token operator">=</span> <span
+    class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span
+    class="token punctuation">,</span> <span class="token punctuation">{</span></span>
+<span class="line">          <span class="token literal-property property">method</span><span
+    class="token operator">:</span> <span class="token string">'POST'</span><span
+    class="token punctuation">,</span></span>
+<span class="line">          <span class="token literal-property property">body</span><span
+    class="token operator">:</span> formData<span class="token punctuation">,</span> <span class="token comment">//自动修改请求头</span></span>
+<span class="line">        <span class="token punctuation">}</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">const</span> result <span class="token operator">=</span> <span
+    class="token keyword">await</span> resp<span class="token punctuation">.</span><span
+    class="token function">json</span><span class="token punctuation">(</span><span
+    class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">return</span> result<span
+    class="token punctuation">;</span></span>
+<span class="line">      <span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">      document<span class="token punctuation">.</span><span
+    class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'button'</span><span
+    class="token punctuation">)</span><span class="token punctuation">.</span><span
+    class="token function-variable function">onclick</span> <span class="token operator">=</span> <span
+    class="token keyword">async</span> <span class="token keyword">function</span> <span
+    class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">const</span> result <span class="token operator">=</span> <span
+    class="token keyword">await</span> <span class="token function">upload</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">const</span> img <span
+    class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span
+    class="token punctuation">(</span><span class="token string">'imgAvatar'</span><span
+    class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">        img<span class="token punctuation">.</span>src <span
+    class="token operator">=</span> result<span class="token punctuation">.</span>path<span
+    class="token punctuation">;</span></span>
+<span class="line">      <span class="token punctuation">}</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token comment">//上传时显示图片</span></span>
+<span class="line">      document<span class="token punctuation">.</span><span
+    class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'avatar'</span><span
+    class="token punctuation">)</span><span class="token punctuation">.</span><span
+    class="token function-variable function">onchange</span> <span class="token operator">=</span> <span
+    class="token keyword">function</span> <span class="token punctuation">(</span><span
+    class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">const</span> file <span class="token operator">=</span> <span
+    class="token keyword">this</span><span class="token punctuation">.</span>files<span
+    class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">const</span> reader <span class="token operator">=</span> <span
+    class="token keyword">new</span> <span class="token class-name">FileReader</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        reader<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span
+    class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span
+    class="token parameter">e</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">          <span class="token keyword">const</span> img <span class="token operator">=</span> document<span
+    class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span
+    class="token string">'imgAvatar'</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">          img<span class="token punctuation">.</span>src <span class="token operator">=</span> e<span
+    class="token punctuation">.</span>target<span class="token punctuation">.</span>result<span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token punctuation">}</span><span class="token punctuation">;</span></span>
+<span class="line">        reader<span class="token punctuation">.</span><span
+    class="token function">readAsDataURL</span><span class="token punctuation">(</span>file<span
+    class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">      <span class="token punctuation">}</span><span class="token punctuation">;</span></span>
+<span class="line">    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span
+    class="token punctuation">></span></span></span>
+<span class="line">  <span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></span>
+<span class="line"><span class="token tag"><span class="token tag"><span
+    class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+            <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0">
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+            </div>
+        </div>
+    </div>
+</template>
+
+

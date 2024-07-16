@@ -14,13 +14,12 @@ export default defineUserConfig({
                 text: '我的笔记',
                 prefix: '/my-note/',
                 children: [{
-                    text: 'foo',
-                    link: '/foo/',
+                    text: 'ES6',
+                    link: '/ES6/',
                 }, {
-                    text: 'bar',
-                    link: '/bar/',
+                    text: 'Typescript',
+                    link: '/Typescript/',
                 }]
-
             }
         ]
     }),

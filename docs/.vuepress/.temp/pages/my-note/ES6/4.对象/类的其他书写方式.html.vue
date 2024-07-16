@@ -1,0 +1,474 @@
+<template>
+    <div><h1 id="类的其他书写方式" tabindex="-1"><a class="header-anchor"
+                                                    href="#类的其他书写方式"><span>类的其他书写方式</span></a></h1>
+        <h2 id="可计算的成员名" tabindex="-1"><a class="header-anchor"
+                                                 href="#可计算的成员名"><span>可计算的成员名</span></a></h2>
+        <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre
+            v-pre class="language-javascript"><code><span class="line"><span class="token keyword">const</span> printName <span
+            class="token operator">=</span> <span class="token string">"print"</span><span
+            class="token punctuation">;</span><span class="token comment">//可计算的成员名</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">    <span class="token function">constructor</span><span class="token punctuation">(</span><span
+    class="token parameter">type<span class="token punctuation">,</span> name<span class="token punctuation">,</span> age<span
+    class="token punctuation">,</span> sex</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>type <span
+    class="token operator">=</span> type<span class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span
+    class="token operator">=</span> name<span class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span
+    class="token operator">=</span> age<span class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>sex <span
+    class="token operator">=</span> sex<span class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token punctuation">[</span>printName<span class="token punctuation">]</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【种类】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>type<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【名字】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>name<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【年龄】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>age<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【性别】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>sex<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">const</span> a <span class="token operator">=</span> <span
+    class="token keyword">new</span> <span class="token class-name">Animal</span><span
+    class="token punctuation">(</span><span class="token string">"狗"</span><span
+    class="token punctuation">,</span> <span class="token string">"旺财"</span><span class="token punctuation">,</span> <span
+    class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"男"</span><span
+    class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">a<span class="token punctuation">[</span>printName<span class="token punctuation">]</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+            <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0">
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+            </div>
+        </div>
+        <h2 id="getter和setter" tabindex="-1"><a class="header-anchor"
+                                                 href="#getter和setter"><span>getter和setter</span></a></h2>
+        <p>Object.defineProperty 可定义某个对象成员属性的读取和设置</p>
+        <p>使用getter和setter控制的属性，不在原型上</p>
+        <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre
+            v-pre class="language-javascript"><code><span class="line"><span class="token keyword">const</span> printName <span
+            class="token operator">=</span> <span class="token string">"print"</span><span
+            class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">    <span class="token function">constructor</span><span class="token punctuation">(</span><span
+    class="token parameter">type<span class="token punctuation">,</span> name<span class="token punctuation">,</span> age<span
+    class="token punctuation">,</span> sex</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>type <span
+    class="token operator">=</span> type<span class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span
+    class="token operator">=</span> name<span class="token punctuation">;</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span
+    class="token operator">=</span> age<span class="token punctuation">;</span></span>
+<span class="line">        <span class="token comment">// 旧写法</span></span>
+<span class="line">        <span class="token comment">// Object.defineProperty(this,"age",{</span></span>
+<span class="line">        <span class="token comment">//     set(value){</span></span>
+<span class="line">        <span class="token comment">//         this._age = value;</span></span>
+<span class="line">        <span class="token comment">//     },</span></span>
+<span class="line">        <span class="token comment">//     get(){</span></span>
+<span class="line">        <span class="token comment">//         return this._age;</span></span>
+<span class="line">        <span class="token comment">//     }</span></span>
+<span class="line">        <span class="token comment">// })</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>sex <span
+    class="token operator">=</span> sex<span class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">    <span
+    class="token comment">//创建一个age属性，并给它加上getter，读取该属性时，会运行该函数</span></span>
+<span class="line">    <span class="token keyword">get</span> <span class="token function">age</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">return</span> <span class="token keyword">this</span><span
+    class="token punctuation">.</span>_age <span class="token operator">+</span> <span
+    class="token string">"岁"</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token comment">//创建一个age属性，并给它加上setter，给该属性赋值时，会运行该函数</span></span>
+<span class="line">    <span class="token keyword">set</span> <span class="token function">age</span><span
+    class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">if</span> <span class="token punctuation">(</span><span
+    class="token keyword">typeof</span> value <span class="token operator">!==</span> <span class="token string">"number"</span><span
+    class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span
+    class="token class-name">TypeError</span><span class="token punctuation">(</span><span class="token string">"age property must be a number"</span><span
+    class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">        <span class="token punctuation">}</span></span>
+<span class="line">        <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span
+    class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">            value <span class="token operator">=</span> <span class="token number">0</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token punctuation">}</span></span>
+<span class="line">        <span class="token keyword">else</span> <span class="token keyword">if</span> <span
+    class="token punctuation">(</span>value <span class="token operator">></span> <span class="token number">1000</span><span
+    class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">            value <span class="token operator">=</span> <span class="token number">1000</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token punctuation">}</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>_age <span
+    class="token operator">=</span> value<span class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token punctuation">[</span>printName<span class="token punctuation">]</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【种类】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>type<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【名字】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>name<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【年龄】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>age<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token string">【性别】：</span><span
+    class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span
+    class="token keyword">this</span><span class="token punctuation">.</span>sex<span
+    class="token interpolation-punctuation punctuation">}</span></span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">var</span> a <span class="token operator">=</span> <span
+    class="token keyword">new</span> <span class="token class-name">Animal</span><span
+    class="token punctuation">(</span><span class="token string">"狗"</span><span
+    class="token punctuation">,</span> <span class="token string">"旺财"</span><span class="token punctuation">,</span> <span
+    class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"男"</span><span
+    class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+            <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0">
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+            </div>
+        </div>
+        <h2 id="静态成员" tabindex="-1"><a class="header-anchor" href="#静态成员"><span>静态成员</span></a></h2>
+        <p>构造函数本身的成员</p>
+        <p>使用static关键字定义的成员即静态成员</p>
+        <div class="language-mermaid line-numbers-mode" data-highlighter="prismjs" data-ext="mermaid"
+             data-title="mermaid"><pre v-pre class="language-mermaid"><code><span class="line"><span
+            class="token keyword">flowchart</span> LR</span>
+<span class="line"></span>
+<span class="line">Constructor<span class="token punctuation">(</span>"`构造函数成员<span
+    class="token operator">:</span></span>
+<span class="line">    **静态成员**`"<span class="token punctuation">)</span></span>
+<span class="line">Prototype<span class="token text string">("原型\n成员:实例成员")</span></span>
+<span class="line">Instance<span class="token text string">("实例对象\n成员:实例成员")</span></span>
+<span class="line"></span>
+<span class="line">Constructor <span class="token inter-arrow-label"><span
+    class="token arrow-head arrow operator">--</span><span class="token label property">prototype</span><span
+    class="token arrow operator">--></span></span> Prototype</span>
+<span class="line">Instance <span class="token inter-arrow-label"><span
+    class="token arrow-head arrow operator">--</span><span class="token label property">__proto__</span><span
+    class="token arrow operator">--></span></span> Prototype</span>
+<span class="line">Constructor <span class="token inter-arrow-label"><span
+    class="token arrow-head arrow operator">--</span><span class="token label property">new</span><span
+    class="token arrow operator">--></span></span> Instance</span>
+<span class="line"></span></code></pre>
+            <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0">
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+            </div>
+        </div>
+        <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre
+            v-pre class="language-javascript"><code><span class="line"><span class="token keyword">class</span> <span
+            class="token class-name">Chess</span> <span class="token punctuation">{</span></span>
+<span class="line">    <span class="token function">constructor</span><span class="token punctuation">(</span><span
+    class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span
+    class="token operator">=</span> name<span class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token keyword">static</span> width <span class="token operator">=</span> <span
+    class="token number">50</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token keyword">static</span> height <span class="token operator">=</span> <span
+    class="token number">50</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token keyword">static</span> <span class="token function">method</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span>Chess<span class="token punctuation">.</span>width<span class="token punctuation">)</span></span>
+<span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span>Chess<span class="token punctuation">.</span>height<span
+    class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line">Chess<span class="token punctuation">.</span><span class="token function">method</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+            <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0">
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+            </div>
+        </div>
+        <h2 id="字段初始化器-es7" tabindex="-1"><a class="header-anchor"
+                                                   href="#字段初始化器-es7"><span>字段初始化器（ES7）</span></a></h2>
+        <p>注意：</p>
+        <p>1). 使用static的字段初始化器，添加的是静态成员
+            2). 没有使用static的字段初始化器，添加的成员位于对象上
+            3). 箭头函数在字段初始化器位置上，指向当前对象</p>
+        <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre
+            v-pre class="language-javascript"><code><span class="line"><span class="token keyword">class</span> <span
+            class="token class-name">Test</span> <span class="token punctuation">{</span></span>
+<span class="line">    <span class="token keyword">static</span> a <span class="token operator">=</span> <span
+    class="token number">1</span><span class="token punctuation">;</span></span>
+<span class="line">    b <span class="token operator">=</span> <span class="token number">2</span><span
+    class="token punctuation">;</span></span>
+<span class="line">    c <span class="token operator">=</span> <span class="token number">3</span><span
+    class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token function">constructor</span><span class="token punctuation">(</span><span
+    class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        <span class="token comment">//this.b = b</span></span>
+<span class="line">        <span class="token comment">//this.c = c</span></span>
+<span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>d <span
+    class="token operator">=</span> <span class="token keyword">this</span><span
+    class="token punctuation">.</span>b <span class="token operator">+</span> <span
+    class="token keyword">this</span><span class="token punctuation">.</span>c<span
+    class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">const</span> t <span class="token operator">=</span> <span
+    class="token keyword">new</span> <span class="token class-name">Test</span><span
+    class="token punctuation">(</span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span>t<span class="token punctuation">)</span></span>
+<span class="line"></span></code></pre>
+            <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0">
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+            </div>
+        </div>
+        <h2 id="类表达式" tabindex="-1"><a class="header-anchor" href="#类表达式"><span>类表达式</span></a></h2>
+        <h2 id="装饰器-es7-decorator" tabindex="-1"><a class="header-anchor" href="#装饰器-es7-decorator"><span>装饰器（ES7）(Decorator)</span></a>
+        </h2>
+        <p>横切关注点</p>
+        <p>装饰器的本质是一个函数</p>
+        <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre
+            v-pre class="language-javascript"><code><span class="line"><span class="token keyword">class</span> <span
+            class="token class-name">Test</span> <span class="token punctuation">{</span></span>
+<span class="line"></span>
+<span class="line">    @Obsolete</span>
+<span class="line">    <span class="token function">print</span><span class="token punctuation">(</span><span
+    class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span
+    class="token punctuation">(</span><span class="token string">"print方法"</span><span
+    class="token punctuation">)</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">function</span> <span class="token function">Obsolete</span><span
+    class="token punctuation">(</span><span class="token parameter">target<span class="token punctuation">,</span> methodName<span
+    class="token punctuation">,</span> descriptor</span><span class="token punctuation">)</span> <span
+    class="token punctuation">{</span></span>
+<span class="line">    <span class="token comment">// function Test</span></span>
+<span class="line">    <span class="token comment">// print</span></span>
+<span class="line">    <span class="token comment">// { value: function print(){}, ... }</span></span>
+<span class="line">    <span class="token comment">// console.log(target, methodName, descriptor);</span></span>
+<span class="line">    <span class="token keyword">const</span> oldFunc <span class="token operator">=</span> descriptor<span
+    class="token punctuation">.</span>value</span>
+<span class="line">    descriptor<span class="token punctuation">.</span><span class="token function-variable function">value</span> <span
+    class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span
+    class="token parameter"><span class="token operator">...</span>args</span><span
+    class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">warn</span><span
+    class="token punctuation">(</span><span class="token template-string"><span
+    class="token template-punctuation string">`</span><span class="token interpolation"><span
+    class="token interpolation-punctuation punctuation">${</span>methodName<span
+    class="token interpolation-punctuation punctuation">}</span></span><span class="token string">方法已过时</span><span
+    class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span
+    class="token punctuation">;</span></span>
+<span class="line">        <span class="token function">oldFunc</span><span class="token punctuation">.</span><span
+    class="token function">apply</span><span class="token punctuation">(</span><span
+    class="token keyword">this</span><span class="token punctuation">,</span> args<span
+    class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span></code></pre>
+            <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0">
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+                <div class="line-number"></div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
