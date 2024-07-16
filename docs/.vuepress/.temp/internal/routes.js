@@ -3,7 +3,7 @@ export const redirects = JSON.parse("{}")
 export const routes = Object.fromEntries([
   ["/", {
     loader: () => import(/* webpackChunkName: "index.html" */"/Users/kappie/Project/project/MyProject/ibooks/docs/.vuepress/.temp/pages/index.html.js"),
-    meta: {"title": "Hello VuePress"}
+    meta: {"title": ""}
   }],
   ["/haha.html", {
     loader: () => import(/* webpackChunkName: "haha.html" */"/Users/kappie/Project/project/MyProject/ibooks/docs/.vuepress/.temp/pages/haha.html.js"),
