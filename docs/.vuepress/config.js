@@ -21,7 +21,20 @@ export default defineUserConfig({
                     link: '/Typescript/',
                 }]
             }
-        ]
+        ],
+
+        sideBar: {
+            '/ES6/': [
+                {
+                    text: 'ES6',
+                    collapsible: true,
+                    children: [
+                        '声明变量.md'
+                    ]
+                }
+            ]
+        }
     }),
+
     base: '/ibooks/',
 })

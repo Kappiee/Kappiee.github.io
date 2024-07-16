@@ -1,5 +1,6 @@
 import comp from "/Users/kappie/Project/project/MyProject/ibooks/docs/.vuepress/.temp/pages/my-note/ES6/7.异步处理/async和await.html.vue"
-const data = JSON.parse("{\"path\":\"/my-note/ES6/7.%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/async%E5%92%8Cawait.html\",\"title\":\"async 和 await\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"async\",\"slug\":\"async\",\"link\":\"#async\",\"children\":[]},{\"level\":2,\"title\":\"await\",\"slug\":\"await\",\"link\":\"#await\",\"children\":[]}],\"git\":{\"updatedTime\":null,\"contributors\":[{\"name\":\"kappie\",\"email\":\"1780409106@qq.com\",\"commits\":1}]},\"filePathRelative\":\"my-note/ES6/7.异步处理/async和await.md\"}")
+
+const data = JSON.parse("{\"path\":\"/my-note/ES6/7.%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/async%E5%92%8Cawait.html\",\"title\":\"async 和 await\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"async\",\"slug\":\"async\",\"link\":\"#async\",\"children\":[]},{\"level\":2,\"title\":\"await\",\"slug\":\"await\",\"link\":\"#await\",\"children\":[]}],\"git\":{\"updatedTime\":1721137568000,\"contributors\":[{\"name\":\"kappie\",\"email\":\"1780409106@qq.com\",\"commits\":1}]},\"filePathRelative\":\"my-note/ES6/7.异步处理/async和await.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

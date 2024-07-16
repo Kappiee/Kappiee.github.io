@@ -1,5 +1,6 @@
 import comp from "/Users/kappie/Project/project/MyProject/ibooks/docs/.vuepress/.temp/pages/haha.html.vue"
-const data = JSON.parse("{\"path\":\"/haha.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1721134348000,\"contributors\":[{\"name\":\"kappie\",\"email\":\"1780409106@qq.com\",\"commits\":2}]},\"filePathRelative\":\"haha.md\"}")
+
+const data = JSON.parse("{\"path\":\"/haha.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1721137568000,\"contributors\":[{\"name\":\"kappie\",\"email\":\"1780409106@qq.com\",\"commits\":3}]},\"filePathRelative\":\"haha.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
