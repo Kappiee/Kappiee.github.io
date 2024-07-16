@@ -1,0 +1,21 @@
+{
+  "name": "ibooks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ibooks"
+  },
+  "author": "Kappiee",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.14",
+    "@vuepress/theme-default": "^2.0.0-rc.38",
+    "vuepress": "^2.0.0-rc.14"
+  }
+}
