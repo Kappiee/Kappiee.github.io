@@ -8,7 +8,7 @@ if (import.meta.webpackHot) {
 }
 
 if (import.meta.hot) {
-  import.meta.hot.accept(({siteData}) => {
+  import.meta.hot.accept(({ siteData }) => {
     __VUE_HMR_RUNTIME__.updateSiteData(siteData)
   })
 }
