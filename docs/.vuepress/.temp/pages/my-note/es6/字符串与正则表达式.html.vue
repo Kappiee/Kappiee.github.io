@@ -66,7 +66,7 @@
 <span class="line"></span>
 <span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="模板字符串标记" tabindex="-1"><a class="header-anchor" href="#模板字符串标记"><span>模板字符串标记</span></a></h1>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="模板字符串标记" tabindex="-1"><a class="header-anchor" href="#模板字符串标记"><span>模板字符串标记</span></a></h3>
 <p>在模板字符串书写之前，可以加上标记:</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="line">标记名<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">模板字符串</span><span class="token template-punctuation string">`</span></span></span>
 <span class="line"></span></code></pre>
@@ -133,7 +133,7 @@
 <span class="line"></span>
 <span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//abc\t\nbcd</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="更多的字符串api" tabindex="-1"><a class="header-anchor" href="#更多的字符串api"><span>更多的字符串API</span></a></h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="更多的字符串api" tabindex="-1"><a class="header-anchor" href="#更多的字符串api"><span>更多的字符串API</span></a></h3>
 <p>以下均为字符串的实例（原型）方法</p>
 <ul>
 <li>includes</li>
