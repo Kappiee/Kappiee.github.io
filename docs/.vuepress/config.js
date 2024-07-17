@@ -27,7 +27,7 @@ export default defineUserConfig({
         ],
         sidebar: {
             '/my-note/es6/': [
-                '声明变量','字符串与正则表达式','字符串API'
+                '声明变量','字符串与正则表达式','函数', '对象' , '解构', '符号', '异步处理', 'FetchApi'
             ],
             '/my-note/Typescript/': [
                 '类型','类型兼容性','类型演算','泛型','位枚举','类','readonly修饰符','访问器','第三方库','声明文件','tsconfig.json'
