@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa7d6859-b8f1-4a5c-865b-3467c4b6cd34" name="更改" comment="fix: 添加我的笔记">
+      <change afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/@vue_devtools-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/@vue_devtools-api.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/@vuepress_shared.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/@vuepress_shared.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/_metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/chunk-AU3CLKKL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/chunk-AU3CLKKL.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/chunk-UKCZNIRO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/chunk-UKCZNIRO.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/vue-router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/vue-router.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.cache/deps/vue.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/clientConfigs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/siteData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/themeData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/404.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/404.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/haha.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/haha.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/hjihihih/test.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/hjihihih/test.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/index.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/index.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/1.声明变量/声明变量.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/1.声明变量/声明变量.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/Unicode支持.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/Unicode支持.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/字符串API.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/字符串API.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/模板字符串.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/模板字符串.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/模板字符串标记.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/模板字符串标记.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/正则表达式中的粘连标记.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/2.字符串与正则表达式/正则表达式中的粘连标记.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/函数作为构造函数.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/函数作为构造函数.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/剩余参数.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/剩余参数.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/参数默认值.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/参数默认值.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/展开运算符.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/展开运算符.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/箭头函数.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/3.函数/箭头函数.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/Object的新增API.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/Object的新增API.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/新增的对象字面量语法.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/新增的对象字面量语法.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/类-构造函数的语法糖.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/类-构造函数的语法糖.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/类的其他书写方式.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/类的其他书写方式.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/类的继承.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/类的继承.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/面向对象简介.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/4.对象/面向对象简介.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/5.解构/参数解构.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/5.解构/参数解构.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/5.解构/对象解构.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/5.解构/对象解构.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/5.解构/数组解构.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/5.解构/数组解构.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/6.符号/共享符号.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/6.符号/共享符号.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/6.符号/普通符号.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/6.符号/普通符号.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/6.符号/知名（公共、具名）符号.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/6.符号/知名（公共、具名）符号.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/7.异步处理/Promise.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/7.异步处理/Promise.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/7.异步处理/async和await.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/7.异步处理/async和await.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/8.FetchApi/基本使用.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/8.FetchApi/基本使用.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/8.FetchApi/文件上传.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/8.FetchApi/文件上传.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/声明变量.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/ES6/声明变量.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/readonly修饰符.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/readonly修饰符.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/tsconfig.json.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/tsconfig.json.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/位枚举.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/位枚举.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/声明文件.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/声明文件.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/泛型.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/泛型.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/第三方库.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/第三方库.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类型.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类型.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类型兼容性.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类型兼容性.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类型演算.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/类型演算.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/访问器.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/my-note/Typescript/访问器.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/啊啊啊啊啊/hihii.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/啊啊啊啊啊/hihii.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/啊啊啊啊啊/托尔斯泰.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/啊啊啊啊啊/托尔斯泰.html.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/.markdownlint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/styles/palette.scss" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/vite-root/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/404.html-BlbClncm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/app-DI3ddPUZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/index.html-CS1onYFC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/style-pqpGs7N-.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/haha.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/字符串与正则表达式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/2.字符串与正则表达式/Unicode支持.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/2.字符串与正则表达式/字符串API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/2.字符串与正则表达式/模板字符串.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/2.字符串与正则表达式/模板字符串标记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/2.字符串与正则表达式/正则表达式中的粘连标记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/3.函数/函数作为构造函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/3.函数/函数作为构造函数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/3.函数/剩余参数.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/3.函数/剩余参数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/3.函数/参数默认值.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/3.函数/参数默认值.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/3.函数/展开运算符.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/3.函数/展开运算符.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/3.函数/箭头函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/3.函数/箭头函数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/4.对象/Object的新增API.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/4.对象/Object的新增API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/4.对象/新增的对象字面量语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/4.对象/新增的对象字面量语法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/4.对象/类-构造函数的语法糖.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/4.对象/类-构造函数的语法糖.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/4.对象/类的其他书写方式.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/4.对象/类的其他书写方式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/4.对象/类的继承.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/4.对象/类的继承.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/4.对象/面向对象简介.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/4.对象/面向对象简介.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/5.解构/参数解构.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/5.解构/参数解构.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/5.解构/对象解构.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/5.解构/对象解构.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/5.解构/数组解构.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/5.解构/数组解构.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/6.符号/共享符号.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/6.符号/共享符号.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/6.符号/普通符号.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/6.符号/普通符号.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/6.符号/知名（公共、具名）符号.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/6.符号/知名（公共、具名）符号.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/7.异步处理/Promise.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/7.异步处理/Promise.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/7.异步处理/async和await.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/7.异步处理/async和await.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/7.异步处理/手写Promise/MyPromise.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/7.异步处理/手写Promise/MyPromise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/8.FetchApi/基本使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/8.FetchApi/基本使用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/8.FetchApi/文件上传.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/8.FetchApi/文件上传.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/my-note/ES6/声明变量.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/my-note/es6/声明变量.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/docs/my-note/es6/3.函数/函数作为构造函数.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docs/my-note/es6/字符串与正则表达式.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2jJfCInGTxG41sDWssGQssBdsKy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kappie/Project/project/MyProject/ibooks/docs/my-note/ES6/declare-variable&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/kappie/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/my-note/ES6/declare-variable" />
+      <recent name="$PROJECT_DIR$/docs/my-note/ES6" />
+      <recent name="$PROJECT_DIR$/docs/my-note" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/my-note/ES6" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="lint:md" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:md" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.lint:md" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="aa7d6859-b8f1-4a5c-865b-3467c4b6cd34" name="更改" comment="" />
+      <created>1721109972081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721109972081</updated>
+      <workItem from="1721109973120" duration="1246000" />
+      <workItem from="1721111224269" duration="308000" />
+      <workItem from="1721111535227" duration="1228000" />
+      <workItem from="1721113462890" duration="156000" />
+      <workItem from="1721114978675" duration="4192000" />
+      <workItem from="1721131979772" duration="18162000" />
+      <workItem from="1721184902226" duration="1672000" />
+      <workItem from="1721186578504" duration="5071000" />
+      <workItem from="1721195996296" duration="174000" />
+      <workItem from="1721196173005" duration="56000" />
+      <workItem from="1721196237217" duration="3403000" />
+      <workItem from="1721199648005" duration="1611000" />
+      <workItem from="1721201299112" duration="203000" />
+      <workItem from="1721201771469" duration="604000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1721110957615</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721110957615</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1721111296536</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721111296536</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1721115054422</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721115054422</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init">
+      <option name="closed" value="true" />
+      <created>1721131994915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721131994915</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init">
+      <option name="closed" value="true" />
+      <created>1721132238166</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721132238166</updated>
+    </task>
+    <task id="LOCAL-00006" summary="init">
+      <option name="closed" value="true" />
+      <created>1721132291358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721132291358</updated>
+    </task>
+    <task id="LOCAL-00007" summary="init">
+      <option name="closed" value="true" />
+      <created>1721132830025</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721132830025</updated>
+    </task>
+    <task id="LOCAL-00008" summary="init">
+      <option name="closed" value="true" />
+      <created>1721132951010</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721132951010</updated>
+    </task>
+    <task id="LOCAL-00009" summary="init">
+      <option name="closed" value="true" />
+      <created>1721133281672</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721133281672</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: 测试">
+      <option name="closed" value="true" />
+      <created>1721133819860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721133819860</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: 测试">
+      <option name="closed" value="true" />
+      <created>1721134357069</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721134357069</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: 测试">
+      <option name="closed" value="true" />
+      <created>1721134361737</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721134361737</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: 测试">
+      <option name="closed" value="true" />
+      <created>1721134941857</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721134941857</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix: 添加我的笔记">
+      <option name="closed" value="true" />
+      <created>1721136686291</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721136686291</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: 添加我的笔记">
+      <option name="closed" value="true" />
+      <created>1721137572837</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721137572837</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix: 添加我的笔记">
+      <option name="closed" value="true" />
+      <created>1721137591840</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721137591840</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix: 添加我的笔记">
+      <option name="closed" value="true" />
+      <created>1721139916926</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721139916926</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix: 添加我的笔记">
+      <option name="closed" value="true" />
+      <created>1721139927945</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721139927945</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <MESSAGE value="fix: 测试" />
+    <MESSAGE value="fix: 添加我的笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 添加我的笔记" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>

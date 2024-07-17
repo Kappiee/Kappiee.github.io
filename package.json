@@ -2,9 +2,11 @@
   "name": "ibooks",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "lint:md": "markdownlint 'docs/**/*.md'"
   },
   "repository": {
     "type": "git",
@@ -14,8 +16,18 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@eslint/js": "^9.7.0",
     "@vuepress/bundler-vite": "^2.0.0-rc.14",
     "@vuepress/theme-default": "^2.0.0-rc.38",
+    "eslint": "^9.7.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
+    "markdownlint": "^0.34.0",
+    "typescript-eslint": "^7.16.1",
     "vuepress": "^2.0.0-rc.14"
+  },
+  "dependencies": {
+    "eslint-plugin-markdown": "^5.1.0"
   }
 }

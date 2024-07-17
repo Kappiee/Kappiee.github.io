@@ -1,6 +1,6 @@
-import {viteBundler} from '@vuepress/bundler-vite'
-import {defaultTheme} from '@vuepress/theme-default'
-import {defineUserConfig} from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
     bundler: viteBundler(),
@@ -13,28 +13,26 @@ export default defineUserConfig({
             {
                 text: '我的笔记',
                 prefix: '/my-note/',
-                children: [{
-                    text: 'ES6',
-                    link: '/ES6/',
-                }, {
-                    text: 'Typescript',
-                    link: '/Typescript/',
-                }]
-            }
+                children: [
+                    {
+                        text: 'ES6',
+                        link: 'es6/声明变量',
+                    },
+                    {
+                        text: 'Typescript',
+                        link: 'typescript/类型',
+                    },
+                ],
+            },
         ],
-
-        sideBar: {
-            '/ES6/': [
-                {
-                    text: 'ES6',
-                    collapsible: true,
-                    children: [
-                        '声明变量.md'
-                    ]
-                }
+        sidebar: {
+            '/my-note/es6/': [
+                '声明变量','字符串与正则表达式','字符串API'
+            ],
+            '/my-note/Typescript/': [
+                '类型','类型兼容性','类型演算','泛型','位枚举','类','readonly修饰符','访问器','第三方库','声明文件','tsconfig.json'
             ]
-        }
+        },
     }),
-
     base: '/ibooks/',
 })
