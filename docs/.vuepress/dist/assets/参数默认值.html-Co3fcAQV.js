@@ -1,4 +1,7 @@
-import{_ as n,c as s,o as a,b as p}from"./app-BFW4Kyoc.js";const t={},e=p(`<h1 id="参数默认值" tabindex="-1"><a class="header-anchor" href="#参数默认值"><span>参数默认值</span></a></h1><h2 id="使用" tabindex="-1"><a class="header-anchor" href="#使用"><span>使用</span></a></h2><p>在书写形参时，直接给形参赋值，附的值即为默认值</p><p>这样一来，当调用函数时，如果没有给对应的参数赋值（给它的值是undefined），则会自动使用默认值。</p><p>示例:</p><div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="line"><span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token number">2</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+import { _ as n, c as s, o as a, b as p } from "./app-BFW4Kyoc.js";
+const t = {},
+  e = p(
+    `<h1 id="参数默认值" tabindex="-1"><a class="header-anchor" href="#参数默认值"><span>参数默认值</span></a></h1><h2 id="使用" tabindex="-1"><a class="header-anchor" href="#使用"><span>使用</span></a></h2><p>在书写形参时，直接给形参赋值，附的值即为默认值</p><p>这样一来，当调用函数时，如果没有给对应的参数赋值（给它的值是undefined），则会自动使用默认值。</p><p>示例:</p><div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="line"><span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token number">2</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
 <span class="line">    <span class="token keyword">return</span> a <span class="token operator">+</span> b <span class="token operator">+</span> c<span class="token punctuation">;</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span>
@@ -26,4 +29,18 @@ import{_ as n,c as s,o as a,b as p}from"./app-BFW4Kyoc.js";const t={},e=p(`<h1 i
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span>
 <span class="line"><span class="token function">test</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//2 2 正常</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,12),c=[e];function o(l,u){return a(),s("div",null,c)}const k=n(t,[["render",o],["__file","参数默认值.html.vue"]]),r=JSON.parse('{"path":"/my-note/es6/3.%E5%87%BD%E6%95%B0/%E5%8F%82%E6%95%B0%E9%BB%98%E8%AE%A4%E5%80%BC.html","title":"参数默认值","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"使用","slug":"使用","link":"#使用","children":[]},{"level":2,"title":"对arguments的影响","slug":"对arguments的影响","link":"#对arguments的影响","children":[]},{"level":2,"title":"留意暂时性死区","slug":"留意暂时性死区","link":"#留意暂时性死区","children":[]}],"git":{"updatedTime":1721203529000,"contributors":[{"name":"kappie","email":"1780409106@qq.com","commits":1}]},"filePathRelative":"my-note/es6/3.函数/参数默认值.md"}');export{k as comp,r as data};
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,
+    12
+  ),
+  c = [e];
+function o(l, u) {
+  return a(), s("div", null, c);
+}
+const k = n(t, [
+    ["render", o],
+    ["__file", "参数默认值.html.vue"],
+  ]),
+  r = JSON.parse(
+    '{"path":"/my-note/es6/3.%E5%87%BD%E6%95%B0/%E5%8F%82%E6%95%B0%E9%BB%98%E8%AE%A4%E5%80%BC.html","title":"参数默认值","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"使用","slug":"使用","link":"#使用","children":[]},{"level":2,"title":"对arguments的影响","slug":"对arguments的影响","link":"#对arguments的影响","children":[]},{"level":2,"title":"留意暂时性死区","slug":"留意暂时性死区","link":"#留意暂时性死区","children":[]}],"git":{"updatedTime":1721203529000,"contributors":[{"name":"kappie","email":"1780409106@qq.com","commits":1}]},"filePathRelative":"my-note/es6/3.函数/参数默认值.md"}'
+  );
+export { k as comp, r as data };
