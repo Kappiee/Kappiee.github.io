@@ -1,4 +1,7 @@
-import{_ as n,c as s,o as a,b as p}from"./app-BFW4Kyoc.js";const t={},e=p(`<h1 id="泛型" tabindex="-1"><a class="header-anchor" href="#泛型"><span>泛型</span></a></h1><h2 id="函数使用泛型" tabindex="-1"><a class="header-anchor" href="#函数使用泛型"><span>函数使用泛型</span></a></h2><div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="line"><span class="token comment">// 如果无法完成推导，且未传递具体类型，默认为空对象</span></span>
+import { _ as n, c as s, o as a, b as p } from "./app-BFW4Kyoc.js";
+const t = {},
+  e = p(
+    `<h1 id="泛型" tabindex="-1"><a class="header-anchor" href="#泛型"><span>泛型</span></a></h1><h2 id="函数使用泛型" tabindex="-1"><a class="header-anchor" href="#函数使用泛型"><span>函数使用泛型</span></a></h2><div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="line"><span class="token comment">// 如果无法完成推导，且未传递具体类型，默认为空对象</span></span>
 <span class="line"><span class="token keyword">function</span> take<span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> number<span class="token operator">&gt;</span><span class="token punctuation">(</span>arr<span class="token operator">:</span><span class="token constant">T</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token literal-property property">n</span><span class="token operator">:</span>number<span class="token punctuation">)</span><span class="token operator">:</span><span class="token constant">T</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span></span>
 <span class="line">    <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">&gt;=</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">{</span></span>
 <span class="line">        <span class="token keyword">return</span> arr<span class="token punctuation">;</span></span>
@@ -91,4 +94,18 @@ import{_ as n,c as s,o as a,b as p}from"./app-BFW4Kyoc.js";const t={},e=p(`<h1 i
 <span class="line">    <span class="token keyword">return</span> result<span class="token punctuation">;</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,15),o=[e];function c(l,i){return a(),s("div",null,o)}const r=n(t,[["render",c],["__file","泛型.html.vue"]]),k=JSON.parse('{"path":"/my-note/Typescript/%E6%B3%9B%E5%9E%8B.html","title":"泛型","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"函数使用泛型","slug":"函数使用泛型","link":"#函数使用泛型","children":[]},{"level":2,"title":"在类型别名 接口 类 中 使用泛型","slug":"在类型别名-接口-类-中-使用泛型","link":"#在类型别名-接口-类-中-使用泛型","children":[{"level":3,"title":"类型别名","slug":"类型别名","link":"#类型别名","children":[]},{"level":3,"title":"接口","slug":"接口","link":"#接口","children":[]},{"level":3,"title":"类","slug":"类","link":"#类","children":[]}]},{"level":2,"title":"泛型约束","slug":"泛型约束","link":"#泛型约束","children":[]},{"level":2,"title":"多泛型","slug":"多泛型","link":"#多泛型","children":[]}],"git":{"updatedTime":1721137568000,"contributors":[{"name":"kappie","email":"1780409106@qq.com","commits":1}]},"filePathRelative":"my-note/Typescript/泛型.md"}');export{r as comp,k as data};
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,
+    15
+  ),
+  o = [e];
+function c(l, i) {
+  return a(), s("div", null, o);
+}
+const r = n(t, [
+    ["render", c],
+    ["__file", "泛型.html.vue"],
+  ]),
+  k = JSON.parse(
+    '{"path":"/my-note/Typescript/%E6%B3%9B%E5%9E%8B.html","title":"泛型","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"函数使用泛型","slug":"函数使用泛型","link":"#函数使用泛型","children":[]},{"level":2,"title":"在类型别名 接口 类 中 使用泛型","slug":"在类型别名-接口-类-中-使用泛型","link":"#在类型别名-接口-类-中-使用泛型","children":[{"level":3,"title":"类型别名","slug":"类型别名","link":"#类型别名","children":[]},{"level":3,"title":"接口","slug":"接口","link":"#接口","children":[]},{"level":3,"title":"类","slug":"类","link":"#类","children":[]}]},{"level":2,"title":"泛型约束","slug":"泛型约束","link":"#泛型约束","children":[]},{"level":2,"title":"多泛型","slug":"多泛型","link":"#多泛型","children":[]}],"git":{"updatedTime":1721137568000,"contributors":[{"name":"kappie","email":"1780409106@qq.com","commits":1}]},"filePathRelative":"my-note/Typescript/泛型.md"}'
+  );
+export { r as comp, k as data };

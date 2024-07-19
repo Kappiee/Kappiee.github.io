@@ -1,0 +1,9 @@
+.eslintrc.cjs
+
+Note_Vault/
+
+node_modules/
+
+!docs/.vuepress
+docs/.vuepress/*
+!docs/.vuepress/config.js

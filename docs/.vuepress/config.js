@@ -2,7 +2,10 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 
+
 export default defineUserConfig({
+  plugins: [
+  ],
   bundler: viteBundler(),
   theme: defaultTheme({
     navbar: [
@@ -15,13 +18,36 @@ export default defineUserConfig({
         prefix: "/my-note/",
         children: [
           {
-            text: "ES6",
-            link: "es6/声明变量",
+            text: "前端",
+            prefix: "/my-note/",
+            children:[
+              {
+                text: "ES6",
+                link: "es6/声明变量",
+              },
+              {
+                text: "Typescript",
+                link: "typescript/类型",
+              },
+              {
+                text: "ESLint",
+                link: "eslint/配置VsCode的ESLint格式化",
+              }
+            ]
           },
-          {
-            text: "Typescript",
-            link: "typescript/类型",
-          },
+          // {
+          //   text: "后端",
+          //   prefix: "/my-note/",
+          //   children:[
+          //     {
+          //       text: "NodeJs",
+          //     },
+          //     {
+          //       text: "dotNet"
+          //     }
+          //   ]
+          // }
+        
         ],
       },
     ],
@@ -36,7 +62,7 @@ export default defineUserConfig({
         "异步处理",
         "FetchApi",
       ],
-      "/my-note/Typescript/": [
+      "/my-note/typescript/": [
         "类型",
         "类型兼容性",
         "类型演算",
@@ -49,6 +75,9 @@ export default defineUserConfig({
         "声明文件",
         "tsconfig.json",
       ],
+      "/my-note/eslint/":[
+        "配置VsCode的ESLint格式化"
+      ]
     },
   }),
   base: "/ibooks/",

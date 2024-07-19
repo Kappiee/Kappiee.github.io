@@ -1,5 +1,5 @@
-import comp from "/Users/kappie/Project/project/MyProject/ibooks/docs/.vuepress/.temp/pages/my-note/Typescript/类型.html.vue"
-const data = JSON.parse("{\"path\":\"/my-note/Typescript/%E7%B1%BB%E5%9E%8B.html\",\"title\":\"类型\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"基本类型\",\"slug\":\"基本类型\",\"link\":\"#基本类型\",\"children\":[]},{\"level\":2,\"title\":\"其他常用类型\",\"slug\":\"其他常用类型\",\"link\":\"#其他常用类型\",\"children\":[]}],\"git\":{\"updatedTime\":1721137568000,\"contributors\":[{\"name\":\"kappie\",\"email\":\"1780409106@qq.com\",\"commits\":1}]},\"filePathRelative\":\"my-note/Typescript/类型.md\"}")
+import comp from "/Users/kappie/Project/project/MyProject/ibooks/docs/.vuepress/.temp/pages/my-note/typescript/类型.html.vue"
+const data = JSON.parse("{\"path\":\"/my-note/typescript/%E7%B1%BB%E5%9E%8B.html\",\"title\":\"类型\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"基本类型\",\"slug\":\"基本类型\",\"link\":\"#基本类型\",\"children\":[]},{\"level\":2,\"title\":\"其他常用类型\",\"slug\":\"其他常用类型\",\"link\":\"#其他常用类型\",\"children\":[]}],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"my-note/typescript/类型.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

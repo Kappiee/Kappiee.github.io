@@ -31,7 +31,7 @@
 <span class="line">    <span class="token comment">// sayHello: function(){</span></span>
 <span class="line">    <span class="token comment">//     console.log(this.name, this.age)</span></span>
 <span class="line">    <span class="token comment">// }</span></span>
-<span class="line">    <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
+<span class="line">    <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
 <span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span></span>
 <span class="line">    <span class="token punctuation">}</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
@@ -45,16 +45,16 @@
 <span class="line"><span class="token keyword">const</span> prop3 <span class="token operator">=</span> <span class="token string">"sayHello2"</span><span class="token punctuation">;</span></span>
 <span class="line"></span>
 <span class="line"><span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token punctuation">{</span></span>
-<span class="line">    <span class="token punctuation">[</span>prop1<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token string">"姬成"</span><span class="token punctuation">,</span></span>
-<span class="line">    <span class="token punctuation">[</span>prop2<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span></span>
-<span class="line">    <span class="token punctuation">[</span>prop3<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>prop1<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">[</span>prop2<span class="token punctuation">]</span><span class="token punctuation">)</span></span>
+<span class="line">    <span class="token punctuation">[</span> prop1 <span class="token punctuation">]</span><span class="token operator">:</span> <span class="token string">"姬成"</span><span class="token punctuation">,</span></span>
+<span class="line">    <span class="token punctuation">[</span> prop2 <span class="token punctuation">]</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span></span>
+<span class="line">    <span class="token punctuation">[</span> prop3 <span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span> prop1 <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">[</span> prop2 <span class="token punctuation">]</span><span class="token punctuation">)</span></span>
 <span class="line">    <span class="token punctuation">}</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span>
 <span class="line"><span class="token comment">// user[prop1] = "姬成"</span></span>
 <span class="line"></span>
-<span class="line">user<span class="token punctuation">[</span>prop3<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">user<span class="token punctuation">[</span> prop3 <span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span>
 <span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>

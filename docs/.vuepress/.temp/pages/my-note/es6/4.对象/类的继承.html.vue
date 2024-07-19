@@ -44,11 +44,11 @@
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span>
 <span class="line"><span class="token keyword">function</span> <span class="token function">Dog</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> sex</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
-<span class="line">    <span class="token comment">//借用父类的构造函数</span></span>
+<span class="line">    <span class="token comment">// 借用父类的构造函数</span></span>
 <span class="line">    <span class="token function">Animal</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"犬类"</span><span class="token punctuation">,</span> name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> sex<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span>
-<span class="line"><span class="token comment">//没有继承方法，使用该种方式继承</span></span>
+<span class="line"><span class="token comment">// 没有继承方法，使用该种方式继承</span></span>
 <span class="line">Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span><span class="token class-name">Dog</span><span class="token punctuation">.</span>prototype<span class="token punctuation">,</span> <span class="token class-name">Animal</span><span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span>
 <span class="line"><span class="token keyword">const</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token string">"旺财"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"公"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
@@ -71,7 +71,7 @@
 <span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">【性别】：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>sex<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">    <span class="token punctuation">}</span></span>
 <span class="line"></span>
-<span class="line">    <span class="token function">jiao</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
+<span class="line">    <span class="token function">jiao</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
 <span class="line">        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">"动物怎么叫的？"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">    <span class="token punctuation">}</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
@@ -83,16 +83,16 @@
 <span class="line">        <span class="token keyword">this</span><span class="token punctuation">.</span>loves <span class="token operator">=</span> <span class="token string">"吃骨头"</span><span class="token punctuation">;</span></span>
 <span class="line">    <span class="token punctuation">}</span></span>
 <span class="line"></span>
-<span class="line">    <span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
-<span class="line">        <span class="token comment">//调用父类的print</span></span>
+<span class="line">    <span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">        <span class="token comment">// 调用父类的print</span></span>
 <span class="line">        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
-<span class="line">        <span class="token comment">//自己特有的代码</span></span>
+<span class="line">        <span class="token comment">// 自己特有的代码</span></span>
 <span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">【爱好】：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>loves<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">    <span class="token punctuation">}</span></span>
 <span class="line"></span>
 <span class="line"></span>
-<span class="line">    <span class="token comment">//同名方法，会覆盖父类</span></span>
-<span class="line">    <span class="token function">jiao</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
+<span class="line">    <span class="token comment">// 同名方法，会覆盖父类</span></span>
+<span class="line">    <span class="token function">jiao</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
 <span class="line">        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"旺旺！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">    <span class="token punctuation">}</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
