@@ -6,5 +6,6 @@ const aaa = {
 
 const { b, c, d } = aaa;
 
-var aabb = [ 1,2,3 ];
+
+var aabb = [1, 2, 3];
 
